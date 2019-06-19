@@ -59,18 +59,18 @@ void task3(void)//模擬process 2
 	printf("[Task3] Control: 0x%x \r\n", (unsigned int)read_ctrl());
 
 	//stop clock
-	printf("[ fibonacci Start :.\r\n\n");
+	printf("[ fibonacci Start :\r\n\n");
 	while(1)
 	{
 		if((a+b)<0)
 		{
 			a=1;
 			b=1;
-			printf("repeat\r\n\n");
+			printf("repeat\r\n\n\n\n");
 		}
 		else
 		{
-			delay=100;
+			delay=1000000;
 			while (delay>0)
 				delay--;
 
@@ -86,7 +86,7 @@ void task3(void)//模擬process 2
 		}
 		else
 		{	
-			delay=100;
+			delay=1000000;
 			while (delay>0)
 				delay--;
 			printf("%d + %d = %d \r\n\n", a,b,a+b);
